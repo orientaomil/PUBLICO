@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Orienta OMIL – Descarga de documentos</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #616e7c;
+      --accent: #2563eb;
+      --accent-dark: #1d4ed8;
+      --border: #e4e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 32px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 1.6rem; }
+    header p { margin: 0; opacity: .92; }
+    main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    h2 { margin-top: 0; font-size: 1.2rem; }
+    .file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .file:last-child { border-bottom: none; }
+    .file-info strong { display: block; }
+    .file-info span { color: var(--muted); font-size: .9rem; }
+    .btn {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .btn:hover { background: var(--accent-dark); }
+    ol, ul { padding-left: 22px; margin: 8px 0; }
+    li { margin-bottom: 6px; }
+    .sub { font-weight: 700; margin-top: 14px; }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding-bottom: 24px; }
+    @media (max-width: 480px) {
+      .file { flex-direction: column; align-items: flex-start; }
+      .btn { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📁 Documentos para egresados y alumnos</h1>
+    <p>Descarga los materiales siguiendo las instrucciones de abajo.</p>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Archivos disponibles</h2>
+
+      <div class="file">
+        <div class="file-info">
+          <strong>Guía de Entrevista Laboral para Egresados TP</strong>
+          <span>PDF · Consejos para prepararte para una entrevista de trabajo</span>
+        </div>
+        <a class="btn" href="Guia_Entrevista_Laboral_Egresados_TP.pdf" download>Descargar</a>
+      </div>
+
+      <div class="file">
+        <div class="file-info">
+          <strong>Modelo de currículum – Egresado de liceo técnico profesional</strong>
+          <span>Word (.docx) · Plantilla editable para completar con tus datos</span>
+        </div>
+        <a class="btn" href="Modelo%20de%20curr%C3%ADculum%20%E2%80%93%20Egresado%20de%20liceo%20t%C3%A9cnico%20profesional.docx" download>Descargar</a>
+      </div>
+
+      <div class="file">
+        <div class="file-info">
+          <strong>Tríptico alumnos</strong>
+          <span>PDF · Información para estudiantes</span>
+        </div>
+        <a class="btn" href="Tr%C3%ADptico%20alumnos.pdf" download>Descargar</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>¿Cómo descargar?</h2>
+
+      <p class="sub">📱 Desde el celular</p>
+      <ol>
+        <li>Toca el botón <strong>Descargar</strong> del archivo que necesitas.</li>
+        <li>Si el navegador pregunta, confirma con <strong>Descargar</strong> o <strong>Permitir</strong>.</li>
+        <li>Busca el archivo en la carpeta <strong>Descargas</strong> (Android) o en la app <strong>Archivos</strong> (iPhone).</li>
+        <li>Para el currículum (.docx), ábrelo con <strong>Word</strong> o <strong>Google Docs</strong> para editarlo.</li>
+      </ol>
+
+      <p class="sub">💻 Desde el computador</p>
+      <ol>
+        <li>Haz clic en <strong>Descargar</strong>.</li>
+        <li>El archivo quedará en tu carpeta <strong>Descargas</strong>.</li>
+        <li>Haz doble clic para abrirlo.</li>
+      </ol>
+
+      <p class="sub">⚠️ Si no se descarga</p>
+      <ul>
+        <li>Mantén presionado el botón y elige <strong>"Descargar enlace"</strong> (celular), o clic derecho → <strong>"Guardar enlace como…"</strong> (computador).</li>
+        <li>Revisa tu conexión a internet y el espacio disponible en tu dispositivo.</li>
+        <li>Si el PDF se abre en el navegador en vez de descargarse, usa el ícono de descarga ⬇️ que aparece arriba o abajo del visor.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Orienta OMIL · Si tienes problemas, contacta a quien te compartió este enlace.
+    </footer>
+
+  </main>
+</body>
+</html>
